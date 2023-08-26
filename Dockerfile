@@ -6,11 +6,7 @@ USER root
 
 RUN apk add --no-cache \
   sed \
-  curl \
-  bash \
-  find \
-  dirname \
-  basename
+  curl 
 
 COPY entrypoint.sh /entrypoint.sh
 COPY upload-to-yum.sh /upload-to-yum.sh
