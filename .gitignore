@@ -1,0 +1,156 @@
+DM_Linux
+DISTRIB_Linux
+DM_*
+DISTRIB_*
+doltcompile
+doltlibtool
+
+*.txt
+!requirements.txt
+\#*\#
+*.tar
+# *.gz
+
+meltest/
+patch/
+pc/nobuild/
+
+paths
+test/meta
+test/failed
+
+# http://www.gnu.org/software/automake
+
+Makefile.in
+
+# http://www.gnu.org/software/autoconf
+
+autom4te.cache
+aclocal.m4
+compile
+configure
+depcomp
+install-sh
+missing
+alldeps
+doxygen.rc
+html/
+latex/
+*.spec
+config.h
+config.log
+config.status
+stamp-h1
+COPYING
+login.log
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.tar
+*.gz
+
+
+target/
+
+blib/
+.build/
+_build/
+cover_db/
+## inc/
+Build
+!Build/
+Build.bat
+.last_cover_stats
+Makefile
+Makefile.old
+MANIFEST.bak
+META.yml
+MYMETA.yml
+nytprof.out
+pm_to_blib
+
+# Patch cruft
+*.rej
+*.orig
+
+# Generated files
+version.cxx
+
+# emacs save files
+*~
+
+# autotools generated directories
+.deps
+.libs
+m4
+libtool
+ltmain.sh
+*.pc
+
+# temp files
+cf
+hf
+
+# executables and artificts
+*.i
+
+
+# Additional developer cruft
+
+## Additional stuff that may or may not get commited later
+
+.idea/

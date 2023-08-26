@@ -1,0 +1,35 @@
+name: 'Nexus Repository Publisher for GitHub Actions'
+author: 'GST'
+description: 'Publish components from GitHub Action workflow to Nexus Repository.'
+inputs:
+  serverUrl:
+    description: 'Nexus Repository Server URL'
+    required: true
+  username:
+    description: 'Username to connect to Nexus Repo to publish components'
+    required: true
+  password:
+    description: 'Password to connect to Nexus Repo to publish components'
+    required: true
+  extension:
+    description: 'File extension to find in path'
+    required: true
+  repository:
+    description: 'Name of target repository on Nexus Repo e.g. maven-releases'
+    required: true
+  path:
+    description: 'Path to search for files to publish'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.serverUrl }}
+    - ${{ inputs.username }}
+    - ${{ inputs.password }}
+    - ${{ inputs.repository }}
+    - ${{ inputs.extension }}
+    - ${{ inputs.path }}
+branding:
+  icon: 'package'
+  color: 'gray-dark'
