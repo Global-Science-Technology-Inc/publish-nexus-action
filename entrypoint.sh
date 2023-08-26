@@ -9,6 +9,7 @@ find "$6" -type f -name "*$5" -print | while read -r file;
       --user $2 \
       --pass $3 \
       --repo $4 \
+      --args -k \
       --rpmdir "${filedir}" \
       --file "${filename}"
   done
