@@ -4,7 +4,7 @@ find "$6" -type f -name "*$5" -print | while read -r file;
   do 
     filedir=$(dirname "${file}")
     filename=$(basename "${file}")
-    ./upload-to-yum.sh \
+    /upload-to-yum.sh \
       --url $1 \
       --user $2 \
       --pass $3 \
