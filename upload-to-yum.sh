@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/sh -l
 
 rpmdir=~/rpmbuild/RPMS/x86_64
 nexus=https://wvwx3.gst.com
