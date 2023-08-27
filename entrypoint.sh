@@ -2,6 +2,7 @@
 
 pwd
 ls -al
+ls -al /
 
 find "$6" -type f -name "*$5" -print | while read -r file; 
   do 
